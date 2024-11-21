@@ -5,6 +5,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -16,4 +17,32 @@ body {
 #signature {
     border: 1px solid black;
     background-color: white;
+}
+
+#variant {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    max-width: 80vw;
+}
+
+button.char-button {
+    padding: 5px;
+    font-size: 0.85rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.char-button:hover {
+    background-color: #e0e0e0;
 }
